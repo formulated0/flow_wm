@@ -20,7 +20,7 @@ fn main() -> Result<(), Box<dyn std::error::Error>> {
     };
 
     let listening_socket = display.add_socket_auto()?;
-    println!("FlowWM listening on: {:?}", listening_socket.into_string());
+    println!("flow_wm listening on: {:?}", listening_socket.into_string());
 
     event_loop.run(None, &mut state, move |_data| {
     })?;
